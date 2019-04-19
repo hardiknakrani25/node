@@ -2,8 +2,8 @@ const EventEmitter = require("events");
 
 const eventEmitter = new EventEmitter();
 
-eventEmitter.on("name", () => {
-  console.log("Hardik");
+eventEmitter.on("sum", (x, y) => {
+  console.log(x + y);
 });
 
-eventEmitter.emit("name");
+eventEmitter.emit("sum", 5, 5);
